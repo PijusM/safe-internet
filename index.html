@@ -2,12 +2,18 @@
 <html>
     <head>
         <title>Quiz</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link href="./style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>header</h1>
+            <ul class="nav">
+                <a href=""><li>Refresh quiz</li></a>
+                <a href="#main"><li>Return to the top</li></a>
+                <a href="#end"><li>Go to the bottom</li></a>
+                <a id="removal" onclick="disableradio()" href="#" ><li>Remove answers</li></a>
+            </ul>
         </header>
         <div id="display">
             <h1>Congratulations on finishing the quiz!</h1>
@@ -15,72 +21,84 @@
         </div>
         <div id="main">
             <div name="questions" id="questions">
+
                 <h1>Choose your answer!</h1>
-                <div class="choice">
+              
+                <div class="choice" id="choice1">
                     <input class="answer" type="radio" name="a1" id="a1" value="something1">
                     <label class="label" for="a1">Answer1</label class="label">
                 </div>
-                <div class="choice">
+                <div class="choice" id="choice2">
                     <input class="answer" type="radio" name="a1" id="b1" value="something2">
                     <label class="label" for="b1">Answer2</label class="label">
                 </div>
-                <div class="choice">
+                <div class="choice" id="choice3">
                     <input class="answer" type="radio" name="a1" id="c1"value="something3">
                     <label class="label" for="c1">Answer3</label class="label">
                 </div>
+    
                 <h1>Choose your answer!</h1>
-                <div class="choice">
+
+                <div class="choice" id="choice4">
                     <input class="answer" type="radio" name="a2" id="a2" value="something1">
                     <label class="label" for="a2">Answer1</label class="label">
                 </div>
-                <div class="choice">
+                <div class="choice" id="choice5">
                     <input class="answer" type="radio" name="a2" id="b2" value="something2">
                     <label class="label" for="b2">Answer2</label class="label">
                 </div>
-                <div class="choice">
+                <div class="choice" id="choice6">
                     <input class="answer" type="radio" name="a2" id="c2"value="something3">
                     <label class="label" for="c2">Answer3</label class="label">
                 </div>
+
                 <h1>Choose your answer!</h1>
-                <div class="choice">
+
+                <div class="choice" id="choice7">
                     <input class="answer" type="radio" name="a3" id="a3" value="something1">
                     <label class="label" for="a3">Answer1</label class="label">
                 </div>
-                <div class="choice">
+                <div class="choice" id="choice8">
                     <input class="answer" type="radio" name="a3" id="b3" value="something2">
                     <label class="label" for="b3">Answer2</label class="label">
                 </div>
-                <div class="choice">
+                <div class="choice" id="choice9">
                     <input class="answer" type="radio" name="a3" id="c3"value="something3">
                     <label class="label" for="c3">Answer3</label class="label">
                 </div>
+
                 <h1>Choose your answer!</h1>
-                <div class="choice">
+
+                <div class="choice" id="choice10">
                     <input class="answer" type="radio" name="a4" id="a4" value="something1">
                     <label class="label" for="a4">Answer1</label class="label">
                 </div>
-                <div class="choice">
+                <div class="choice" id="choice11">
                     <input class="answer" type="radio" name="a4" id="b4" value="something2">
                     <label class="label" for="b4">Answer2</label class="label">
                 </div>
-                <div class="choice">
+                <div class="choice" id="choice12">
                     <input class="answer" type="radio" name="a4" id="c4"value="something3">
                     <label class="label" for="c4">Answer3</label class="label">
                 </div>
+
                 <h1>Choose your answer!</h1>
-                <div class="choice">
+
+                <div class="choice" id="choice13">
                     <input class="answer" type="radio" name="a5" id="a5" value="something1">
                     <label class="label" for="a5">Answer1</label class="label">
                 </div>
-                <div class="choice">
+                <div class="choice" id="choice14">
                     <input class="answer" type="radio" name="a5" id="b5" value="something2">
                     <label class="label" for="b5">Answer2</label class="label">
                 </div>
-                <div class="choice">
+                <div class="choice" id="choice15">
                     <input class="answer" type="radio" name="a5" id="c5"value="something3">
                     <label class="label" for="c5">Answer3</label class="label">
                 </div><br>
+                <div id="end">
                 <button id="submit" onclick="displayresult()">Submit</button>
+                </div>
             </div>
         </div>
         <footer>
@@ -90,8 +108,8 @@
             </div>
             <div id="social">
                 <ul>
-                    <li>misereo GitHub</li>
-                    <li>PijusM GitHub</li>
+                    <a href="https://github.com/misereo" target="_blank"><li>misereo GitHub</li></a>
+                    <a href="https://github.com/PijusM" target="_blank"><li>PijusM GitHub</li></a>
                 </ul>
             </div>
         </footer>

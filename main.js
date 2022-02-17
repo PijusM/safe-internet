@@ -30,4 +30,8 @@ const displayresult = () => {
     document.getElementById('percentage').innerHTML = displaypercentage();
 }
 
-
+let disableradio = () =>{
+    $("input:radio").each(function(i) {
+        this.checked = false;
+    });
+}

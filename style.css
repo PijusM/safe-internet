@@ -2,24 +2,50 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
 /*header*/
 header {
-    position: relative;
+    display: flex;
+    position: fixed;
     top: 0px;
     width: 100%;
     height: 60px;
     color: hsl(0, 0%, 5%);
-    background-color: hsl(0, 0%, 60%);
+    background-color: rgba(0, 0, 0, 0.1);
     text-align: center;
+    justify-content: flex-end;
+}
+#removal{
+    background-image:url(about:blank);
+}
+header li{
+    display:inline-block;
+    position:relative;
+    margin: 14px 35px;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: Nunito;
+    font-weight: bold;
+    max-height: 100px;
+    color:black;
+}
+header li:hover{
+    color:whitesmoke;
+}
+/**/
+body {
+    background-color: hsl(32, 67%, 92%);
 }
 
-body {
-    background-color: hsl(33, 44%, 95%);
+.disabled{
+    pointer-events: none;
 }
 #display {
-    margin: 0 auto;
+    margin: 100px auto;
     text-align: center;
 }
 #display h1 {
@@ -33,12 +59,14 @@ body {
 #main {
     display:flex;
     justify-content: center;
-    height: auto
+    height: auto;
+    margin: 100px 0px 200px 0px;
 }
 #main h1 {
     margin:25px none;
     text-align: center;
 }
+
 .choice {
     font-size: 24px;
     display: inline-block;
@@ -52,7 +80,7 @@ input[type="radio"] {
 }
 
 input[type='radio']:checked + label {
-    color:hsl(0, 79%, 72%);
+    color:hsl(0, 100%, 73%);
 }
 button {
     color:hsl(0, 0%, 96%);
@@ -72,6 +100,7 @@ html{
 body{
     margin-bottom: 50px;
 }
+
 /*footer*/
 footer{
     background-color: black;
@@ -89,27 +118,31 @@ footer{
     margin: 25px 20px 0px 0px;
 }
 
-ul{
-    list-style-type: none;
-    border-left: 2px solid white;
-    padding: 5px 0px 5px 10px;
-}
-
 #content{
     display: flex;
     justify-content: center;
-    
 }
 #content p {
     position: absolute;
     color: white;
-    margin-top: 15px;
-
-    
+    margin-top: 15px;  
 }
 #content aside{
     position: absolute;
     color: white;
     margin-top: 75px;
+}
 
+footer ul{
+    list-style-type: none;
+    border-left: 2px solid white;
+    padding: 5px 0px 5px 10px;
+}
+footer a{
+    text-decoration: none;
+    color:azure;
+}
+footer a:hover{
+    text-decoration: none;
+    color:aqua;
 }
