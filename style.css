@@ -28,7 +28,8 @@ header {
     width: 100%;
     height: 90px;
     color: hsl(0, 0%, 5%);
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #0a0a0a10;
+    
 }
 header img{
     padding-bottom: 5px;
@@ -50,10 +51,12 @@ header img{
 }
 .button{
     margin: 25px 0px 10px;
+    
 }
 .button a {
     font-size: 1.5vw;
     color: #57AAF2;
+    text-shadow: 1px 3px 5px gray;
 
 }
 .label{
@@ -89,7 +92,14 @@ body {
     margin: 100px auto;
     text-align: center;
 }
-
+#correct{
+    color: #57AAF2;
+    text-shadow: -2px 2px 3px gray;
+}
+#percentage{
+    color: #57AAF2;
+    text-shadow: -2px 2px 3px gray;
+}
 #display h1 {
     margin: 15px 0px 25px 0px;
     font-size: 64px;
@@ -113,6 +123,7 @@ body {
     border-bottom: 2px double black;
     padding: 0px 35px 0px 0px;
     width: fit-content;
+    text-shadow: -2px 0px 2px gray;
 }
 .info p{
     margin: 20px 150px;
@@ -147,9 +158,9 @@ body {
     height: 50px;
     text-align: center;
     color: white;
-    border: 2px solid #222940;
+    border: 2px solid #10141f;
     border-radius: 8px;
-    background-color: #0D0D0D;
+    background-color: #010326;
     font-size: 24px;
 }
 input[type="radio"] {
@@ -191,14 +202,14 @@ footer {
     width: 100%;
     height: 128px;
     color: white;
-    background-color: #3f3e3e;
+    background-color: #010326;
 }
 #social {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
-
+    text-decoration: none;
     color: white;
 }
 #social h4 {
@@ -206,7 +217,7 @@ footer {
 }
 #social li,
 #social a:visited {
-    text-decoration-style: none;
+    text-decoration: none;
     display: inline-block;
     color: white;
     font-size: 18px;
