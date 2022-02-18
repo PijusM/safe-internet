@@ -5,112 +5,133 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link href="./style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/37b26325c3.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <ul class="nav">
-                <a href=""><li>Refresh quiz</li></a>
-                <a href="#main"><li>Return to the top</li></a>
-                <a href="#end"><li>Go to the bottom</li></a>
-                <a id="removal" onclick="disableradio()" href="#" ><li>Remove answers</li></a>
-            </ul>
+            <img src="icons/Saugus internetas.png">
         </header>
+        <div class="nav">
+            <div class="button">
+                <a href="#main"><i class="fa-solid fa-angle-up fa-fw"></i></a>
+                <div class="label">
+                    <label class="title">Eiti į viršų.</label>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#submit"><i class="fa-solid fa-angle-down fa-fw"></i></a>
+                <div class="label">
+                    <label class="title">Eiti į apačią.</label>
+                </div>
+            </div>
+            <div class="button">
+                <a href=""><i class="fa-solid fa-arrows-rotate fa-fw"></i></a>
+                <div class="label">
+                    <label class="title">Perkrauti klausimyną.</label>
+                </div>
+            </div>
+            <div class="button">
+                <a onclick="disableradio()" href="#"><i class="fa-solid fa-ban fa-fw"></i></a>
+                <div class="label">
+                    <label class="title">Ištrinti atsakymus.</label>
+                </div>
+           </div>
+        </div>
         <div id="display">
-            <h1>Congratulations on finishing the quiz!</h1>
-            <p>You have answered <span id="correct"></span> questions correct and your score is <span id="percentage"></span>%.</p>
+            <h1>Sveikiname užbaigus klausimyną!</h1>
+            <p>Jūs teisingai atsakėte į <span id="correct"></span> klausimus  ir surinkote <span id="percentage"></span>%.</p>
+        </div>
+        <div class="info" id="info">
+            <h1>Saugaus interneto klausimynas.</h1>
+            <p>Šiame klausimyne galite pasitikrinti savo "saugaus interneto" žinias ir įsivertinti savo saugumą internete.</p>
         </div>
         <div id="main">
-            <div name="questions" id="questions">
-
-                <h1>Choose your answer!</h1>
+            <div id="questions">
+                <h2>Kuris iš šių protokolų byloja apie saugią svetainę?</h2>
               
-                <div class="choice" id="choice1">
+                <div class="choice">
                     <input class="answer" type="radio" name="a1" id="a1" value="something1">
-                    <label class="label" for="a1">Answer1</label class="label">
+                    <label class="label" for="a1">https://</label class="label">
                 </div>
-                <div class="choice" id="choice2">
+                <div class="choice">
                     <input class="answer" type="radio" name="a1" id="b1" value="something2">
-                    <label class="label" for="b1">Answer2</label class="label">
+                    <label class="label" for="b1">http://</label class="label">
                 </div>
-                <div class="choice" id="choice3">
+                <div class="choice">
                     <input class="answer" type="radio" name="a1" id="c1"value="something3">
-                    <label class="label" for="c1">Answer3</label class="label">
+                    <label class="label" for="c1">https:///</label class="label">
                 </div>
-    
-                <h1>Choose your answer!</h1>
 
-                <div class="choice" id="choice4">
+                <h2>Klausimas</h2>
+
+                <div class="choice">
                     <input class="answer" type="radio" name="a2" id="a2" value="something1">
                     <label class="label" for="a2">Answer1</label class="label">
                 </div>
-                <div class="choice" id="choice5">
+                <div class="choice">
                     <input class="answer" type="radio" name="a2" id="b2" value="something2">
                     <label class="label" for="b2">Answer2</label class="label">
                 </div>
-                <div class="choice" id="choice6">
+                <div class="choice">
                     <input class="answer" type="radio" name="a2" id="c2"value="something3">
                     <label class="label" for="c2">Answer3</label class="label">
                 </div>
 
-                <h1>Choose your answer!</h1>
+                <h2>Klausimas</h2>
 
-                <div class="choice" id="choice7">
+                <div class="choice">
                     <input class="answer" type="radio" name="a3" id="a3" value="something1">
                     <label class="label" for="a3">Answer1</label class="label">
                 </div>
-                <div class="choice" id="choice8">
+                <div class="choice">
                     <input class="answer" type="radio" name="a3" id="b3" value="something2">
                     <label class="label" for="b3">Answer2</label class="label">
                 </div>
-                <div class="choice" id="choice9">
+                <div class="choice">
                     <input class="answer" type="radio" name="a3" id="c3"value="something3">
                     <label class="label" for="c3">Answer3</label class="label">
                 </div>
 
-                <h1>Choose your answer!</h1>
+                <h2>Klausimas</h2>
 
-                <div class="choice" id="choice10">
+                <div class="choice">
                     <input class="answer" type="radio" name="a4" id="a4" value="something1">
                     <label class="label" for="a4">Answer1</label class="label">
                 </div>
-                <div class="choice" id="choice11">
+                <div class="choice">
                     <input class="answer" type="radio" name="a4" id="b4" value="something2">
                     <label class="label" for="b4">Answer2</label class="label">
                 </div>
-                <div class="choice" id="choice12">
+                <div class="choice">
                     <input class="answer" type="radio" name="a4" id="c4"value="something3">
                     <label class="label" for="c4">Answer3</label class="label">
                 </div>
 
-                <h1>Choose your answer!</h1>
+                <h2>Klausimas</h2>
 
-                <div class="choice" id="choice13">
+                <div class="choice">
                     <input class="answer" type="radio" name="a5" id="a5" value="something1">
                     <label class="label" for="a5">Answer1</label class="label">
                 </div>
-                <div class="choice" id="choice14">
+                <div class="choice">
                     <input class="answer" type="radio" name="a5" id="b5" value="something2">
                     <label class="label" for="b5">Answer2</label class="label">
                 </div>
-                <div class="choice" id="choice15">
+                <div class="choice">
                     <input class="answer" type="radio" name="a5" id="c5"value="something3">
                     <label class="label" for="c5">Answer3</label class="label">
                 </div><br>
-                <div id="end">
-                <button id="submit" onclick="displayresult()">Submit</button>
-                </div>
+                <button id="submit" onclick="displayresult()">Pateikti</button>
             </div>
         </div>
         <footer>
-            <div id="content">
-                <p>Designed by @misereo and @PijusM</p>
-                <aside>Made in 2022.</aside>
-            </div>
             <div id="social">
+                <h4>GitHub</h4>
                 <ul>
-                    <a href="https://github.com/misereo" target="_blank"><li>misereo GitHub</li></a>
-                    <a href="https://github.com/PijusM" target="_blank"><li>PijusM GitHub</li></a>
+                    <li><a href="https://github.com/misereo" target="_blank"><span class="brdr-left">misereo</span></a></li>
+                    <li><a href="https://github.com/PijusM" target="_blank"><span class="brdr-right">PijusM</span></a></li>
                 </ul>
+                <p>Sukūrė @misereo ir @PijusM, 2022.</p>
             </div>
         </footer>
         <script src="./main.js"></script>

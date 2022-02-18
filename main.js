@@ -24,8 +24,10 @@ const displaypercentage = () =>{
 }
 const displayresult = () => {
     checkall();
-    document.getElementById('main').style.display = "none";
-    document.getElementById('display').style.display = "block";
+    
+    document.getElementById('main').style.display = 'none';
+    document.getElementById('info').style.display = 'none';
+    document.getElementById('display').style.display = 'block';
     document.getElementById('correct').innerHTML = result;
     document.getElementById('percentage').innerHTML = displaypercentage();
 }
