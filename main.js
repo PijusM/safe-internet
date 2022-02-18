@@ -29,5 +29,8 @@ const displayresult = () => {
     document.getElementById('display').style.display = 'block';    document.getElementById('correct').innerHTML = result;
     document.getElementById('percentage').innerHTML = displaypercentage() + "%";
 }
-
-
+const disableradio = () =>{
+    $("input:radio").each(function() {
+        this.checked = false;
+ });
+}
