@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
+    
 }
 html {
     position: relative;
@@ -27,6 +28,7 @@ header {
     height: 90px;
     color: hsl(0, 0%, 5%);
     background-color: #0a0a0a10;
+    overflow: hidden;
     
 }
 .hide{
