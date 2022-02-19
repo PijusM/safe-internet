@@ -20,9 +20,7 @@ html {
 /*header*/
 header {
     display: flex;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
     top: 0px;
     width: 100%;
@@ -31,11 +29,17 @@ header {
     background-color: #0a0a0a10;
     
 }
-header img{
-    padding-bottom: 5px;
+.hide{
+    visibility: hidden;
     
 }
+header ul{position: relative; margin-right: 125px; top: 28px}
 
+header ul li{
+    display: inline-block; padding: 0px 35px; border: 2px solid black; font-weight: bold; color: black; background-color: #F2F2F2; border-radius: 15px;}
+header ul li:hover{
+    color:#57AAF2; transition: color 0.5s;
+}
 /*navigation*/
 .nav {
     display: flex;
@@ -54,7 +58,7 @@ header img{
     
 }
 .button a {
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: #57AAF2;
     text-shadow: 1px 3px 5px gray;
 
@@ -66,7 +70,7 @@ header img{
 }
 .title{
     padding: 0px;
-    font-size: 1.5vw;
+    font-size: 1vw;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s;
