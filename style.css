@@ -54,7 +54,7 @@ header img{
     
 }
 .button a {
-    font-size: 1.5vw;
+    font-size: 40px;
     color: #57AAF2;
     text-shadow: 1px 3px 5px gray;
 
@@ -66,7 +66,7 @@ header img{
 }
 .title{
     padding: 0px;
-    font-size: 1vw;
+    font-size: 25px;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s;
