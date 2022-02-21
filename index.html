@@ -1,7 +1,7 @@
 <!DOCTYPE html> <!---->
 <html>
     <head>
-        <meta name="viewport" content="width=device-width,initial-scale=0.5"/>
+        <metawport" content="width=device-width,initial-scale=0.5"/>
         <title>Quiz</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link href="./style.css" rel="stylesheet">
@@ -16,7 +16,7 @@
             </ul>
             <img src="icons/safe-internet.png">
             <ul>
-                <a href="./index.html"><li class="push">EN</li></a>
+                <a href="./index.html"><li>EN</li></a>
                 <a href="./LT.html"><li>LT</li></a>
             </ul>
         </header>
@@ -54,83 +54,365 @@
             <h1>Safe internet quiz</h1>
             <p>In this quiz you can rate your "safe internet" knowledge and understand your security in the internet.</p>
         </div>
-        <div id="main">
+        <div id="main" class="maincl">
             <div id="questions">
-                <h2>Which one of these protocols are used for safe websites?</h2>
-              
-                <div class="choice">
-                    <input class="answer" type="radio" name="a1" id="a1" value="something1">
-                    <label class="label" for="a1">https://</label class="label">
-                </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a1" id="b1" value="something2">
-                    <label class="label" for="b1">http://</label class="label">
-                </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a1" id="c1"value="something3">
-                    <label class="label" for="c1">https:///</label class="label">
-                </div>
-
-                <h2>Question</h2>
-
-                <div class="choice">
-                    <input class="answer" type="radio" name="a2" id="a2" value="something1">
-                    <label class="label" for="a2">Answer1</label class="label">
-                </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a2" id="b2" value="something2">
-                    <label class="label" for="b2">Answer2</label class="label">
-                </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a2" id="c2"value="something3">
-                    <label class="label" for="c2">Answer3</label class="label">
+                <h2 id="topques">What is the internet?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="1" id="a1" value="something1">
+                        <label class="label" for="a1">Global Computer Network.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="1" id="b1" value="something2">
+                        <label class="label" for="b1">Messaging system.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="1" id="c1" value="something3">
+                        <label class="label" for="c1">Office or home computer network.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="1" id="d1" value="something3">
+                        <label class="label" for="d1">Global information search system.</label class="label">
+                    </div>
                 </div>
 
-                <h2>Question</h2>
-
-                <div class="choice">
-                    <input class="answer" type="radio" name="a3" id="a3" value="something1">
-                    <label class="label" for="a3">Answer1</label class="label">
-                </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a3" id="b3" value="something2">
-                    <label class="label" for="b3">Answer2</label class="label">
-                </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a3" id="c3"value="something3">
-                    <label class="label" for="c3">Answer3</label class="label">
-                </div>
-
-                <h2>Question</h2>
-
-                <div class="choice">
-                    <input class="answer" type="radio" name="a4" id="a4" value="something1">
-                    <label class="label" for="a4">Answer1</label class="label">
-                </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a4" id="b4" value="something2">
-                    <label class="label" for="b4">Answer2</label class="label">
-                </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a4" id="c4"value="something3">
-                    <label class="label" for="c4">Answer3</label class="label">
+                <h2>Your inbox is full of all kinds of weird emails - ads, pictures of inappropriate content, annoying information. These messages go to your inbox all the time and you can't control them ... What do you do?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="2" id="a2" value="something1">
+                        <label class="label" for="a2">You will completely delete your mailbox and create a new one. However, you will already be much more careful when specifying your email address online.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="2" id="b2" value="something2">
+                        <label class="label" for="b2">Search the web for information on how to block and filter emails you don't want.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="2" id="c2" value="something3">
+                        <label class="label" for="c2">Each time you receive an unwanted message, you delete it or move it to the Trash folder.</label class="label">
+                    </div>
                 </div>
 
-                <h2>Question</h2>
+                <h2>What can protect your computer from viruses?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="3" id="a3" value="something1">
+                        <label class="label" for="a3">No one can protect your computer because a lot of new viruses are being created now.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="3" id="b3" value="something2">
+                        <label class="label" for="b3">Antibiotics.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="3" id="c3" value="something3">
+                        <label class="label" for="c3">Antivirus.</label class="label">
+                    </div>
+                </div>
 
-                <div class="choice">
-                    <input class="answer" type="radio" name="a5" id="a5" value="something1">
-                    <label class="label" for="a5">Answer1</label class="label">
+                <h2>Which password is the best?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="4" id="a4" value="something1">
+                        <label class="label" for="a4">123456789</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="4" id="b4" value="something2">
+                        <label class="label" for="b4">u[Q6UA&A&lt2LFJ$Du</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="4" id="c4" value="something3">
+                        <label class="label" for="c4">password</label class="label">
+                    </div>
                 </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a5" id="b5" value="something2">
-                    <label class="label" for="b5">Answer2</label class="label">
+
+                <h2>Your birthday is coming! On this occasion, you are having a party at home and sharing the invitation on your Facebook account. You want the party to be great, so what is the best way to invite friends?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="5" id="a5" value="something1">
+                        <label class="label" for="a5">You'll create a public event and share an invitation on the wall of your Facebook account - the more people who come, the more fun!</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="5" id="b5" value="something2">
+                        <label class="label" for="b5">You will create a private event and invite only your Facebook account friends. But you will allow them to give birth to other acquaintances of their own.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="5" id="c5" value="something3">
+                        <label class="label" for="c5">Your best parties are with friends, so you can create a private event and invite just your friends.</label class="label">
+                    </div>
                 </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a5" id="c5"value="something3">
-                    <label class="label" for="c5">Answer3</label class="label">
-                </div><br>
-                <button id="submit" onclick="displayresult()">Submit</button>
+
+                <h2>Why isn't it safe to keep Bluetooth enabled on my mobile phone at all times?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="6" id="a6" value="something1">
+                        <label class="label" for="a6">You can receive unwanted messages and photos from other mobile phones, and your data also becomes available.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="6" id="b6" value="something2">
+                        <label class="label" for="b6">This is detrimental to the cell phone.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="6" id="c6" value="something3">
+                        <label class="label" for="c6">It becomes possible to track you down.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="6" id="d6" value="something4">
+                        <label class="label" for="d6">A Bluetooth service that has been active for a long time increases your mobile phone bill.</label class="label">
+                    </div>
+                </div>
+
+                <h2>A stranger is sharing an "Unreal Video!" How will you behave?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="7" id="a7" value="something1">
+                        <label class="label" for="a7">Be sure to download the video to your computer and watch it, but remove it from your Facebook account wall - it's best to share it with your friends in person.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="7" id="b7" value="something2">
+                        <label class="label" for="b7">The video should be a lot of fun, so you can download, watch and be sure to invite your Facebook friends to do so.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="7" id="c7" value="something3">
+                        <label class="label" for="c7">A video from an unknown sender is most likely a virus. As a result, you can remove it from your Facebook account wall as soon as possible and not share it with your friends.</label class="label">
+                    </div>
+                </div>
+
+                <h2>What personal information will you provide on online chat sites?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="8" id="a8" value="something1">
+                        <label class="label" for="a8">Real name, age and address.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="8" id="b8" value="something2">
+                        <label class="label" for="b8">Your nickname</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="8" id="c8" value="something3">
+                        <label class="label" for="c8">The details of your best friend.</label class="label">
+                    </div>
+                </div>
+
+                <h2>You get two new friend requests in your Facebook account: one from someone you recognize from a photo and one you don't remember at all. What do you do?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="9" id="a9" value="something1">
+                        <label class="label" for="a9">You'll add both to your friends - the more friends you have on your Facebook account, the more fun!</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="9" id="b9" value="something2">
+                        <label class="label" for="b9">You will immediately reject the stranger and ask the person you saw when and where you met.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="9" id="c9" value="something3">
+                        <label class="label" for="c9">You will ask if they know when your birthday is. This will make sure that these people really know you.</label class="label">
+                    </div>
+                </div>
+
+                <h2>Is there a way to keep unwanted people from seeing or contacting you while having a social networking profile?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="10" id="a10" value="something1">
+                        <label class="label" for="a10">You need to choose in your profile settings so that only people you approve can see the information.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="10" id="b10" value="something2">
+                        <label class="label" for="b10">Social networks automatically protect you from other users.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="10" id="c10" value="something3">
+                        <label class="label" for="c10">No, that's impossible.</label class="label">
+                    </div>
+                </div>
+
+                <h2>Which of the following protocols tells you about a secure site?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="11" id="a11" value="something1">
+                        <label class="label" for="a11">https:///</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="11" id="b11" value="something2">
+                        <label class="label" for="b11">http://</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="11" id="c11" value="something3">
+                        <label class="label" for="c11">https://</label class="label">
+                    </div>
+                </div>
+
+                <h2>What is the difference between Internet data protocols, http and https?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="12" id="a12" value="something1">
+                        <label class="label" for="a12">"http" is used by individuals and "https" - by organizations.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="12" id="b12" value="something2">
+                        <label class="label" for="b12">"https" is used for international connections and "http" - for local connections.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="12" id="c12" value="something3">
+                        <label class="label" for="c12">"https" is just a faster version of the "http" protocol.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="12" id="d12" value="something3">
+                        <label class="label" for="d12">"https" is a secure protocol for transmitting encrypted data.</label class="label">
+                    </div>
+                </div>
+
+                <h2>Which of these signs is mandatory e. email addresses?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="13" id="a13" value="something1">
+                        <label class="label" for="a13">!</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="13" id="b13" value="something2">
+                        <label class="label" for="b13">@</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="13" id="c13" value="something3">
+                        <label class="label" for="c13">#</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="13" id="d13" value="something3">
+                        <label class="label" for="d13">$</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="13" id="e13" value="something3">
+                        <label class="label" for="e13">%</label class="label">
+                    </div>
+                </div>
+
+                <h2>What is the best way to manage your emails?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="14" id="a14" value="something1">
+                        <label class="label" for="a14">Move them to the appropriate mail folders.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="14" id="b14" value="something2">
+                        <label class="label" for="b14">Leave them in your Inbox.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="14" id="c14" value="something3">
+                        <label class="label" for="c14">Print and then remove the emails.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="12" id="d14" value="something3">
+                        <label class="label" for="d14">Read messages should be deleted.</label class="label">
+                    </div>
+                </div>
+
+                <h2>Is it safe to buy goods online?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="15" id="a15" value="something1">
+                        <label class="label" for="a15">No, it's not safe.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="15" id="b15" value="something2">
+                        <label class="label" for="b15">Insecure because anyone can find out the passwords being transmitted.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="15" id="c15" value="something3">
+                        <label class="label" for="c15">It is insecure because anyone can find out the personal data being transmitted.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="15" id="d15" value="something3">
+                        <label class="label" for="d15">Safe with basic safety rules.</label class="label">
+                    </div>
+                </div>
+
+                <h2>What to do after receiving the bank e-mail an email telling you to enter your online banking login password?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="16" id="a16" value="something1">
+                        <label class="label" for="a16">Transfer all money to another account. You need to take care of the safety of your money.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="16" id="b16" value="something2">
+                        <label class="label" for="b16">Send your password as soon as possible.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="16" id="c16" value="something3">
+                        <label class="label" for="c16">Notify your bank of such a letter. Do not disclose the password.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="16" id="d16" value="something3">
+                        <label class="label" for="d16">Do nothing. If they need it, let them find out for themselves.</label class="label">
+                    </div>
+                </div>
+
+                <h2>What does HTTP status code 200 mean?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="17" id="a17" value="something1">
+                        <label class="label" for="a17">The request has been fulfilled.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="17" id="b17" value="something2">
+                        <label class="label" for="b17">The requested source was not found.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="17" id="c17" value="something3">
+                        <label class="label" for="c17">The server encountered an unexpected error.</label class="label">
+                    </div>
+                </div>
+
+                <h2>What is the purpose of GET and POST methods?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="18" id="a18" value="something1">
+                        <label class="label" for="a18">It is a computer language with a server.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="18" id="b18" value="something2">
+                        <label class="label" for="b18">Transfer and share data with the server.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="18" id="c18" value="something3">
+                        <label class="label" for="c18">Manage posts on Facebook.</label class="label">
+                    </div>
+                </div>
+
+                <h2>What's the difference between Web 1.0 and Web 2.0 pages?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="19" id="a19" value="something1">
+                        <label class="label" for="a19">Web 1.0 is static, meaning it does not respond to user actions, the content is the same for everyone, and Web 2.0 responds to user actions, and the page can be customized for a specific user.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="19" id="b19" value="something2">
+                        <label class="label" for="b19">Different versions of pages, more tools for page developers.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="19" id="c19" value="something3">
+                        <label class="label" for="c19">Web 1.0 is user-responsive and the page can be customized, and Web 2.0 is static, meaning it does not respond to user-specific content.</label class="label">
+                    </div>
+                </div>
+
+                <h2>What should you consider before sharing your personal photos? (tick the incorrect option)</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="20" id="a20" value="something1">
+                        <label class="label" for="a20">Would you want this picture to be seen by your parents or teachers?</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="20" id="b20" value="something2">
+                        <label class="label" for="b20">Is there any private information in the photo?</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="20" id="c20" value="something3">
+                        <label class="label" for="c20">Is the quality of the photo high enough?</label class="label">
+                    </div>
+                </div>
+                <br>
+                <div class="submitcontainer">
+                    <div class="submit">
+                        <button id="submit" onclick="displayresult()">Pateikti</button>
+                    </div>
+                </div>
             </div>
         </div>
         <footer>

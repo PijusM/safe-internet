@@ -42,6 +42,7 @@ header ul li{
 header ul li:hover{
     color:#57AAF2; transition: color 0.5s;
 }
+
 /*navigation*/
 .nav {
     display: flex;
@@ -63,7 +64,6 @@ header ul li:hover{
     font-size: 1.5vw;
     color: #57AAF2;
     text-shadow: 1px 3px 5px gray;
-
 }
 .label{
     width: 225px;
@@ -88,10 +88,6 @@ body {
     margin-bottom: 50px;
 }
 
-/*disabled*/
-.disabled {
-    pointer-events: none;
-}
 
 /*display*/
 #display {
@@ -139,7 +135,7 @@ body {
 }
 
 /*main*/
-#main {
+.maincl {
     display: flex;
     justify-content: center;
     height: auto;
@@ -147,27 +143,40 @@ body {
     margin: 100px 0px 200px 0px;
 }
 
-#main h2 {
-    margin:25px none;
+.maincl h2 {
+    margin-top: 150px;
+    margin-bottom: 25px;
     text-align: center;
+}
+#topques{
+    margin-top: 50px;
 }
 
 /*answer choices*/
-
-
+.allchoice{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+}
 .choice {
-    display: inline-block;
-    margin: 20px auto 25px;
-    padding: 2px 8px;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 3px 18px;
     min-width: 100px;
-    width: 250px;
-    height: 50px;
     text-align: center;
     color: white;
     border: 2px solid #10141f;
     border-radius: 8px;
     background-color: #010326;
     font-size: 24px;
+    align-items: center;
+}
+.label{
+    width: 400px;
+    height: fit-content;
+    
 }
 input[type="radio"] {
     display: none;
@@ -178,9 +187,11 @@ input[type='radio']:checked + label {
 }
 
 /*submit answers button*/
-button {
-    margin-left: 37.5%;
-    margin-right: 37.5%;
+.submitcontainer{
+    display:flex;
+    justify-content: center;
+}
+button{
     margin-top: 60px;
     width: 200px;
     height: 70px;

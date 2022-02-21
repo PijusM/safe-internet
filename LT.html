@@ -54,83 +54,365 @@
             <h1>Saugaus interneto klausimynas.</h1>
             <p>Šiame klausimyne galite pasitikrinti savo "saugaus interneto" žinias ir įsivertinti savo saugumą internete.</p>
         </div>
-        <div id="main">
+        <div id="main" class="maincl">
             <div id="questions">
+                <h2 id="topques">Kas yra internetas?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="1" id="a1" value="something1">
+                        <label class="label" for="a1">Pasaulinis kompiuterių tinklas.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="1" id="b1" value="something2">
+                        <label class="label" for="b1">Bendravimo žinutėmis sistema.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="1" id="c1" value="something3">
+                        <label class="label" for="c1">Įstaigos ar namų kompiuterių tinklas.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="1" id="d1" value="something3">
+                        <label class="label" for="d1">Pasaulinė informacijos paieškos sistema.</label class="label">
+                    </div>
+                </div>
+
+                <h2>Jūsų pašto dėžutė pilna visokių keistų laiškų – reklamos, netinkamo turinio paveikslėlių, tave erzinančios informacijos. Šie laiškai eina į jūsų pašto dėžutę nuolat ir jūs negalite jų kontroliuoti... Ką daryti?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="2" id="a2" value="something1">
+                        <label class="label" for="a2">Visai ištrinsite savo pašto dėžutę ir susikursite naują. Tačiau jau būsite gerokai atsargesni nurodydami savo el. pašto adresą internete.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="2" id="b2" value="something2">
+                        <label class="label" for="b2">Paieškosite internete informacijos, kaip galima užblokuoti ir filtruoti laiškus, kurių nenorite gauti.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="2" id="c2" value="something3">
+                        <label class="label" for="c2">Kiekvieną kartą, kai gaunate nenorimą laišką, jį ištrinate arba perkeliate į aplanką „Šiukšlės“.</label class="label">
+                    </div>
+                </div>
+
+                <h2>Kas gali apsaugoti kompiuterį nuo virusų?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="3" id="a3" value="something1">
+                        <label class="label" for="a3">Kompiuterio negali apsaugoti niekas, nes dabar kuriama labai daug naujų virusų.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="3" id="b3" value="something2">
+                        <label class="label" for="b3">Antibiotikai.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="3" id="c3" value="something3">
+                        <label class="label" for="c3">Antivirusinė programa.</label class="label">
+                    </div>
+                </div>
+
+                <h2>Kuris slaptažodis geriausias?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="4" id="a4" value="something1">
+                        <label class="label" for="a4">123456789</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="4" id="b4" value="something2">
+                        <label class="label" for="b4">u[Q6UA&A&lt2LFJ$Du</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="4" id="c4" value="something3">
+                        <label class="label" for="c4">slaptazodis</label class="label">
+                    </div>
+                </div>
+
+                <h2>Artėja jūsų gimtadienis! Šia proga namuose rengiate vakarėlį ir kvietimu pasidalinate savo Facebook paskyroje. Jūs norite, kad vakarėlis būtų puikus, tad kaip geriausia pakviesti draugus?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="5" id="a5" value="something1">
+                        <label class="label" for="a5">Sukursite viešą renginį ir pasidalinsite kvietimu ant savo Facebook paskyros sienos – kuo daugiau žmonių ateis, tuo bus smagiau!</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="5" id="b5" value="something2">
+                        <label class="label" for="b5">Sukursite privatų renginį ir pakviesite tik savo Facebook paskyros draugus. Tačiau leisite jiems atsivesti ir kitus savo pažįstamus.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="5" id="c5" value="something3">
+                        <label class="label" for="c5">Patys geriausi jūsų vakarėliai būna su draugais, todėl sukursite privatų renginį ir pakviesite vien tik savo draugus.</label class="label">
+                    </div>
+                </div>
+
+                <h2>Kodėl nėra saugu savo mobiliajame telefone nuolatos laikyti veikiančią įjungtą „Bluetooth“ paslaugą?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="6" id="a6" value="something1">
+                        <label class="label" for="a6">Galite gauti nepageidaujamų žinučių bei nuotraukų iš kitų mobiliųjų telefonų, be to, jūsų duomenys taipogi tampa prieinami.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="6" id="b6" value="something2">
+                        <label class="label" for="b6">Tai kenkia mobiliajam telefonui.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="6" id="c6" value="something3">
+                        <label class="label" for="c6">Jus tampa įmanoma susekti.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="6" id="d6" value="something4">
+                        <label class="label" for="d6">Ilgą laiką veikianti įjungta „Bluetooth“ paslauga didina mobiliojo telefono sąskaitą.</label class="label">
+                    </div>
+                </div>
+
+                <h2>Nepažįstamas asmuo ant jūsų Facebook paskyros sienos pasidalina vaizdo siužeto nuoroda „Nerealus video!“, kviečia šį video klipą parsisiųsti į kompiuterį ir pažiūrėti. Kaip elgsitės?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="7" id="a7" value="something1">
+                        <label class="label" for="a7">Video būtinai parsisiųsite į kompiuterį ir pažiūrėsite, tačiau nuo savo Facebook paskyros sienos pašalinsite – jau geriau tokiu video klipu pasidalinti asmeniškai su draugais.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="7" id="b7" value="something2">
+                        <label class="label" for="b7">Video klipas turėtų būti labai įdomus, todėl jį parsisiųsite, pažiūrėtite ir būtinai tai padaryti paraginsite savo Facebook draugus.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="7" id="c7" value="something3">
+                        <label class="label" for="c7">Video klipas nuo nepažįstamo siuntėjo greičiausiai yra virusas. Todėl jį kuo greičiau pašalinsite nuo savo Facebook paskyros sienos ir su draugais nesidalinsite.</label class="label">
+                    </div>
+                </div>
+
+                <h2>Kokią savo asmeninę informaciją pateiksite interneto pokalbių svetainėse?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="8" id="a8" value="something1">
+                        <label class="label" for="a8">Tikrą vardą ir pavardę, amžių bei adresą.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="8" id="b8" value="something2">
+                        <label class="label" for="b8">Slapyvardį</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="8" id="c8" value="something3">
+                        <label class="label" for="c8">Savo geriausio draugo duomenis.</label class="label">
+                    </div>
+                </div>
+
+                <h2>Savo Facebook paskyroje gaunate du naujus prašymus draugauti: vieną nuo asmens, kurį iš nuotraukos atpažįstate, o kito jūs visai neprisimenate. Ką darote?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="9" id="a9" value="something1">
+                        <label class="label" for="a9">Priimsite abu asmenis į draugus – kuo daugiau draugų turėsite Facebook paskyroje, tuo smagiau!</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="9" id="b9" value="something2">
+                        <label class="label" for="b9">Nepažįstamą asmenį iš karto atmesite, o matyto asmens dar pasiteirausite, kada ir kur jūs buvote susitikę.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="9" id="c9" value="something3">
+                        <label class="label" for="c9">Paklausite, ar jie žino, kada jūsų gimtadienis. Taip įsitikinsite, kad šie žmonės jus tikrai pažįsta.</label class="label">
+                    </div>
+                </div>
+
+                <h2>Ar turint socialinio tinklo profilį įmanoma padaryti, kad nepageidaujami asmenys jo nematytų arba su jumis negalėtų susisiekti?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="10" id="a10" value="something1">
+                        <label class="label" for="a10">Profilio nustatymuose reikia pasirinkti, kad informaciją galėtų matyti tik jūsų patvirtinti žmonės.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="10" id="b10" value="something2">
+                        <label class="label" for="b10">Socialiniai tinklai automatiškai apsaugo jus nuo kitų vartotojų.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="10" id="c10" value="something3">
+                        <label class="label" for="c10">Ne, neįmanoma.</label class="label">
+                    </div>
+                </div>
+
                 <h2>Kuris iš šių protokolų byloja apie saugią svetainę?</h2>
-              
-                <div class="choice">
-                    <input class="answer" type="radio" name="a1" id="a1" value="something1">
-                    <label class="label" for="a1">https://</label class="label">
-                </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a1" id="b1" value="something2">
-                    <label class="label" for="b1">http://</label class="label">
-                </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a1" id="c1"value="something3">
-                    <label class="label" for="c1">https:///</label class="label">
-                </div>
-
-                <h2>Klausimas</h2>
-
-                <div class="choice">
-                    <input class="answer" type="radio" name="a2" id="a2" value="something1">
-                    <label class="label" for="a2">Atsakymas1</label class="label">
-                </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a2" id="b2" value="something2">
-                    <label class="label" for="b2">Atsakymas2</label class="label">
-                </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a2" id="c2"value="something3">
-                    <label class="label" for="c2">Atsakymas3</label class="label">
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="11" id="a11" value="something1">
+                        <label class="label" for="a11">https:///</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="11" id="b11" value="something2">
+                        <label class="label" for="b11">http://</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="11" id="c11" value="something3">
+                        <label class="label" for="c11">https://</label class="label">
+                    </div>
                 </div>
 
-                <h2>Klausimas</h2>
-
-                <div class="choice">
-                    <input class="answer" type="radio" name="a3" id="a3" value="something1">
-                    <label class="label" for="a3">Atsakymas1</label class="label">
-                </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a3" id="b3" value="something2">
-                    <label class="label" for="b3">Atsakymas2</label class="label">
-                </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a3" id="c3"value="something3">
-                    <label class="label" for="c3">Atsakymas3</label class="label">
-                </div>
-
-                <h2>Klausimas</h2>
-
-                <div class="choice">
-                    <input class="answer" type="radio" name="a4" id="a4" value="something1">
-                    <label class="label" for="a4">Atsakymas1</label class="label">
-                </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a4" id="b4" value="something2">
-                    <label class="label" for="b4">Atsakymas2</label class="label">
-                </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a4" id="c4"value="something3">
-                    <label class="label" for="c4">Atsakymas3</label class="label">
+                <h2>Kuo skiriasi interneto duomenų perdavimo protokolai, žymimi http ir https?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="12" id="a12" value="something1">
+                        <label class="label" for="a12">„http” naudoja fiziniai asmenys, o „https” – organizacijos.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="12" id="b12" value="something2">
+                        <label class="label" for="b12">„https” naudojamas tarptautiniams ryšiams, o „http” – vietiniams.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="12" id="c12" value="something3">
+                        <label class="label" for="c12">„https” tėra sparčiau veikianti „http” protokolo atmaina.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="12" id="d12" value="something3">
+                        <label class="label" for="d12">„https” yra saugus protokolas, kai perduodami šifruoti duomenys.</label class="label">
+                    </div>
                 </div>
 
-                <h2>Klausimas</h2>
+                <h2>Kuris iš šių ženklų privalomas e. pašto adresuose?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="13" id="a13" value="something1">
+                        <label class="label" for="a13">!</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="13" id="b13" value="something2">
+                        <label class="label" for="b13">@</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="13" id="c13" value="something3">
+                        <label class="label" for="c13">#</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="13" id="d13" value="something3">
+                        <label class="label" for="d13">$</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="13" id="e13" value="something3">
+                        <label class="label" for="e13">%</label class="label">
+                    </div>
+                </div>
 
-                <div class="choice">
-                    <input class="answer" type="radio" name="a5" id="a5" value="something1">
-                    <label class="label" for="a5">Atsakymas1</label class="label">
+                <h2>Koks tinkamiausias perskaitytų el. pašto laiškų tvarkymo būdas?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="14" id="a14" value="something1">
+                        <label class="label" for="a14">Perkelti juos į atitinkamus pašto aplankus.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="14" id="b14" value="something2">
+                        <label class="label" for="b14">Palikti juos "Gautųjų laiškų" aplanke.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="14" id="c14" value="something3">
+                        <label class="label" for="c14">Išspausdinti ir po to pašalinti.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="12" id="d14" value="something3">
+                        <label class="label" for="d14">Perskaitytus laiškus reikia pašalinti.</label class="label">
+                    </div>
                 </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a5" id="b5" value="something2">
-                    <label class="label" for="b5">Atsakymas2</label class="label">
+
+                <h2>Ar saugu pirkti prekes internetu?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="15" id="a15" value="something1">
+                        <label class="label" for="a15">Ne, nesaugu</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="15" id="b15" value="something2">
+                        <label class="label" for="b15">Nesaugu, nes bet kas gali sužinoti perduodamus slaptažodžius.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="15" id="c15" value="something3">
+                        <label class="label" for="c15">Nesaugu, nes bet kas gali sužinoti perduodamus asmens duomenis.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="15" id="d15" value="something3">
+                        <label class="label" for="d15">Saugu laikantis pagrindinių saugumo taisyklių.</label class="label">
+                    </div>
                 </div>
-                <div class="choice">
-                    <input class="answer" type="radio" name="a5" id="c5"value="something3">
-                    <label class="label" for="c5">Atsakymas3</label class="label">
-                </div><br>
-                <button id="submit" onclick="displayresult()">Pateikti</button>
+
+                <h2>Ką daryti gavus banko el. laišką su nurodymu pranešti savo internetinės bankininkystės prisijungimo slaptažodį?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="16" id="a16" value="something1">
+                        <label class="label" for="a16">Pervesti visus pinigus į kitą sąskaitą: reikia rūpintis savo pinigų saugumu.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="16" id="b16" value="something2">
+                        <label class="label" for="b16">Kuo greičiau nusiųsti savo slaptažodį.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="16" id="c16" value="something3">
+                        <label class="label" for="c16">Apie tokį laišką pranešti savo bankui. Slaptažodžio neatskleisti.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="16" id="d16" value="something3">
+                        <label class="label" for="d16">Nieko nedaryti. Kam reikia, tegu išsiaiškina patys.</label class="label">
+                    </div>
+                </div>
+
+                <h2>Ką reiškia HTTP statuso kodas 200?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="17" id="a17" value="something1">
+                        <label class="label" for="a17">Prašymas įvykdytas.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="17" id="b17" value="something2">
+                        <label class="label" for="b17">Prašomas šaltinis nerastas.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="17" id="c17" value="something3">
+                        <label class="label" for="c17">Serveryje įvyko netikėta klaida.</label class="label">
+                    </div>
+                </div>
+
+                <h2>Kam reikalingi GET ir POST metodai?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="18" id="a18" value="something1">
+                        <label class="label" for="a18">Tai kompiuterio kalba su serveriu.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="18" id="b18" value="something2">
+                        <label class="label" for="b18">Perkelti ir dalintis duomenimis su serveriu.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="18" id="c18" value="something3">
+                        <label class="label" for="c18">Tvarkytis su pranešimais Facebook platformoje.</label class="label">
+                    </div>
+                </div>
+
+                <h2>Kuo skiriasi Web 1.0 ir Web 2.0 puslapiai?</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="19" id="a19" value="something1">
+                        <label class="label" for="a19">Web 1.0 yra statiškas, t.y nereaguoja į naudotojo veiksmus, visiems turinys vienodas, o Web 2.0 reaguoja į naudotojo veiksmus ir puslapis gali būti pritaikytas konkrečiam vartotojui.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="19" id="b19" value="something2">
+                        <label class="label" for="b19">Skiriasi puslapių versijos, daugiau įrankių puslapių kūrėjams.</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="19" id="c19" value="something3">
+                        <label class="label" for="c19">Web 1.0 yra reaguojantis į naudotojo veiksmus ir puslapis gali būti pritaikytas konkrečiam vartotojui, o Web 2.0 yra statiškas, t.y nereaguoja į naudotojo veiksmus, visiems turinys vienodas.</label class="label">
+                    </div>
+                </div>
+
+                <h2>Ką reikėtų apsvarstyti prieš dalijantis savo asmeninėmis nuotraukomis? (pažymėkite neteisingą variantą)</h2>
+                <div class="allchoice">
+                    <div class="choice">
+                        <input class="answer" type="radio" name="20" id="a20" value="something1">
+                        <label class="label" for="a20">Ar norėtumėte, kad šią nuotrauką pamatytų jūsų tėvai ar mokytojai?</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="20" id="b20" value="something2">
+                        <label class="label" for="b20">Ar nuotraukoje negalima įžiūrėti kokios nors privačios informacijos?</label class="label">
+                    </div>
+                    <div class="choice">
+                        <input class="answer" type="radio" name="20" id="c20" value="something3">
+                        <label class="label" for="c20">Ar nuotrauka yra pakankamai kokybiška.</label class="label">
+                    </div>
+                </div>
+                <br>
+                <div class="submitcontainer">
+                    <div class="submit">
+                        <button id="submit" onclick="displayresult()">Pateikti</button>
+                    </div>
+                </div>
             </div>
         </div>
         <footer>
