@@ -50,7 +50,7 @@ header ul li:hover{
     text-align: center;
     list-style: none;
     flex-direction: column;
-    right: 20px;
+    right: -100px;
     bottom: 0px;
     margin: 0px;
     z-index: 2;
@@ -157,7 +157,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 50px;
-    
+    flex-wrap: wrap;
 }
 .choice {
     display: inline-flex;
